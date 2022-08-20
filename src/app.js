@@ -29,4 +29,8 @@ export default class App extends LightningElement{
 	mult(){
 	this.resultado = this.num1 * this.num2;
 	}
+
+	limpa(){
+		this.resultado = "";
+	}
 }
