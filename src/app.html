@@ -1,9 +1,10 @@
 <template>
 	<div class="slds-card">
 		<h1 id="titulo"> Calculadora TOP </h1>
-		<lightning-input type="text" label="n1" onchange={mudouN1}></lightning-input>
-		<lightning-input type="text" label="n2" onchange={mudouN2}></lightning-input>
+		<lightning-input type="text" label="Número A" onchange={mudouN1}></lightning-input>
+		<lightning-input type="text" label="Número B" onchange={mudouN2}></lightning-input>
 
+		<br/>
 		<lightning-button variant="brand" label="+" title="Primary action" onclick={soma} class="slds-m-left_x-small">
 		</lightning-button>
 		<lightning-button variant="brand" label="-" title="Primary action" onclick={sub} class="slds-m-left_x-small">
@@ -14,6 +15,7 @@
 		</lightning-button>
 		<lightning-button variant="brand" label="Clear" title="Primary action" onclick={limpa} class="slds-m-left_x-small">
 		</lightning-button>
+		<br/>
 		<br/>
 		<span id="resultado" >  O resultado é: {resultado} </span>
 	</div>
